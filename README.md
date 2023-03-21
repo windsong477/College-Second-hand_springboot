@@ -8,13 +8,16 @@
 `这里是后端代码的仓库哦~`  
 <br/>
 
-前端代码请移步 [高校二手交易平台前端仓库](https://github.com/windsong477/College-Second-hand_vue)
+前端代码请移步 [高校二手物品交易平台前端仓库](https://github.com/windsong477/College-Second-hand_vue)
 
 <br/>
 
 推荐使用idea部署运行哦~记得配置好数据库，在 application.yml 文件内进行配置  
 
 <br/>
+# 在线演示
+演示地址： [高校二手物品交易平台](http://139.9.219.174:81/shop)
+
 
 ***技术栈：***  Vue + Vue-cli + Vue-Router + Vuex + Axios + Echarts + Spring Boot + JWT + MyBatis + MySQL  
 
