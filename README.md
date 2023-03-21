@@ -18,7 +18,6 @@
 
 ***技术栈：***  Vue + Vue-cli + Vue-Router + Vuex + Axios + Echarts + Spring Boot + JWT + MyBatis + MySQL  
 
-<br/>
 
 ***细节描述：***
 
