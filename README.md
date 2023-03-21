@@ -8,7 +8,7 @@
 `这里是后端代码的仓库哦~`  
 
 
-前端代码请移步 [高校二手交易平台前端仓库] (https://github.com/windsong477/College-Second-hand_vue)
+前端代码请移步 [高校二手交易平台前端仓库](https://github.com/windsong477/College-Second-hand_vue)
 
 
 
