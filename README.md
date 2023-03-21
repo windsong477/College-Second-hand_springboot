@@ -1,16 +1,20 @@
 # 高校二手物品交易平台
 
-***项目简介：*** 该项目使用Vue全家桶进行开发，使用ElementUI对整个项目页面进行布局，通过Axios实现前后端通信，包含用户模块、商品模块、订单模块等。  
+***项目简介：*** 该项目使用Vue全家桶进行开发，使用ElementUI对整个项目页面进行布局，通过Axios实现前后端通信，包含用户模块、商品模块、订单模块等。  \
+
 
 
 基于Vue2+Spring Boot+Element-UI 的前后端分离项目
-`这里是后端代码的仓库哦~`  
+`这里是后端代码的仓库哦~`  \
 
 
-推荐使用idea部署运行哦~记得配置好数据库，在 application.yml 文件内进行配置  
+
+推荐使用idea部署运行哦~记得配置好数据库，在 application.yml 文件内进行配置  \
 
 
-*技术栈：* Vue + Vue-cli + Vue-Router + Vuex + Axios + Echarts + Spring Boot + JWT + MyBatis + MySQL  
+
+***技术栈：***  Vue + Vue-cli + Vue-Router + Vuex + Axios + Echarts + Spring Boot + JWT + MyBatis + MySQL  \
+
 
 
 ***细节描述：***
