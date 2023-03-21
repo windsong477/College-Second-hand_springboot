@@ -20,7 +20,7 @@
 ***技术栈：***  Vue + Vue-cli + Vue-Router + Vuex + Axios + Echarts + Spring Boot + JWT + MyBatis + MySQL  
 
 
-***细节描述：***
+细节描述：
 
 1、对 Axios 进行二次封装 ，模块化管理API接口。 
 
