@@ -16,10 +16,6 @@
 
 <br/>
 
-# 在线演示
-
-演示地址： [高校二手物品交易平台](http://139.9.219.174:81/shop)
-
 
 ***技术栈：***  Vue + Vue-cli + Vue-Router + Vuex + Axios + Echarts + Spring Boot + JWT + MyBatis + MySQL  
 
