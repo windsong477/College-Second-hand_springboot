@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.collegesecondhand_springboot.mapper.OrderMapper">
+    <delete id="deleteOrderBatch" parameterType="Integer">
+        DELETE FROM `order` WHERE Oid IN
+        <foreach item="Oids" collection="list" index="index" open="("
+                 separator="," close=")">
+            #{Oids}
+        </foreach>
+    </delete>
+
+</mapper>

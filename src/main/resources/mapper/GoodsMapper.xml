@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.collegesecondhand_springboot.mapper.GoodsMapper">
+    <update id="updateGoods">
+        UPDATE goods
+        <set>
+            Gname=#{Gname},
+            Gbuyprice=#{Gbuyprice},
+            Gsellprice=#{Gsellprice},
+            Gphoto=#{Gphoto},
+            Gdescribe=#{Gdescribe},
+            Gaudit=#{Gaudit},
+            Gstatus=#{Gstatus}
+        </set>
+        WHERE Gid=#{Gid}
+    </update>
+
+    <update id="updateStudentGoods">
+        UPDATE goods
+        <set>
+            Gname=#{Gname},
+            Gbuyprice=#{Gbuyprice},
+            Gsellprice=#{Gsellprice},
+            Gphoto=#{Gphoto},
+            Gdescribe=#{Gdescribe},
+            Gaudit=#{Gaudit},
+            Gstatus=#{Gstatus}
+        </set>
+        WHERE Gid=#{Gid}
+    </update>
+
+    <delete id="deleteGoodsBatch" parameterType="Integer">
+        DELETE FROM admin WHERE Gid IN
+        <foreach item="Gids" collection="list" index="index" open="("
+                 separator="," close=")">
+            #{Gids}
+        </foreach>
+    </delete>
+
+</mapper>

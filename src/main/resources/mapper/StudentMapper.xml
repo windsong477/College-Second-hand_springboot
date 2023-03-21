@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.collegesecondhand_springboot.mapper.StudentMapper">
+    <insert id="insertStudent">
+        INSERT INTO student
+        (Susername, Sschool, Scollege, Sgrade, Sclass, Smajor,Sno, Ssex, Sqq, Swx, Sphone, Sadress)
+        VALUES (#{Susername},
+                #{Scollege},
+                #{Scollege},
+                #{Sgrade},
+                #{Sclass},
+                #{Smajor},
+                #{Sno},
+                #{Ssex},
+                #{Sqq},
+                #{Swx},
+                #{Sphone},
+                #{Sadress})
+    </insert>
+
+    <update id="updateStudent">
+        UPDATE student
+        <set>
+            Susername=#{Susername},
+            Sschool=#{Sschool},
+            Scollege=#{Scollege},
+            Sgrade=#{Sgrade},
+            Sclass=#{Sclass},
+            Smajor=#{Smajor},
+            Sno=#{Sno},
+            Ssex=#{Ssex},
+            Sqq=#{Sqq},
+            Swx=#{Swx},
+            Sphone=#{Sphone},
+            Sadress=#{Sadress},
+            Savatar=#{Savatar},
+        </set>
+        WHERE Sid=#{Sid}
+    </update>
+
+    <delete id="deleteStudentBatch" parameterType="Integer">
+        DELETE FROM student WHERE Sid IN
+        <foreach item="Sids" collection="list" index="index" open="("
+                 separator="," close=")">
+            #{Sids}
+        </foreach>
+    </delete>
+
+</mapper>

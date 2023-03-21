@@ -1,0 +1,26 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 9090
+  address: 0.0.0.0   #允许局域网访问
+# 数据库驱动：
+spring:
+  servlet:
+    multipart:
+      max-file-size: 2MB     #单个文件最大限制
+      max-request-size: 50MB  #多个文件最大限制
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    # 数据库连接地址
+    url: jdbc:mysql://localhost:3306/College-Second-hand?characterEncoding=utf-8&serverTimezone=UTC   #填写数据库名
+    # 数据库用户名&密码：
+    username: root       #填写你的数据库用户名
+    password:            #填写你的密码
+
+# mybatis的相关配置：
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #扫描所有mybatis的xml文件
+
+files:
+  upload:
+    path: D:/IDEA-java/College-Second-hand_springboot文件上传/files/     #请更换你的图片上传路径地址

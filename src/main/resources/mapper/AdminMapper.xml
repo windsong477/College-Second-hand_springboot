@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.collegesecondhand_springboot.mapper.AdminMapper">
+    <!--<update id="updateAdmin">
+        UPDATE admin
+        <set>
+            Ausername=#{Ausername},
+            Aavatar=#{Aavatar},
+            Aphone=#{Aphone}
+        </set>
+        WHERE Aid=#{Aid}
+    </update>-->
+
+    <delete id="deleteAdminBatch" parameterType="Integer">
+        DELETE FROM admin WHERE Aid IN
+        <foreach item="Aids" collection="list" index="index" open="("
+                 separator="," close=")">
+            #{Aids}
+        </foreach>
+    </delete>
+
+</mapper>
